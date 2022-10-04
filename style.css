@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;0,800;1,300&display=swap');
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background: #EBEBEB;
+    max-width: 50%;
+    margin: 0 auto;
+    color: #84898C;
+}
+
+/* HEADER */
+
+header{
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    text-align: center;
+    padding: 50px;
+    font-size: 20px;
+}
+h1{
+    font-weight: 800;
+    color: #DD5555;
+}
+header img{
+    width: 150px;
+    border-radius: 800px;
+    object-fit: cover;
+    overflow: hidden;
+    border: 4px solid #DBDBDB;
+}
+header p{
+    text-align: justify;
+    line-height: 2rem;
+}
+header a{
+    background-color: #DD5555;
+    color: white;
+    border-radius: 5px;
+    padding: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 15px;
+}
+
+/* NAV */
+
+nav{
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 15px 0;
+    font-size: 20px;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+li{
+    padding: 20px;
+    list-style-type: none;
+}
+li a {
+    text-decoration: none;
+    color: #CCCCCC;
+}
+nav li{
+    text-align: center;
+}
+nav i{
+    font-size: 2rem;
+}
+nav span{
+    display: block;
+}
+
+
+/* CONTENT */
+
+.fav-movies{
+    background: white;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.fav-movies h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+figure{
+    display: flex;
+    margin-bottom: 50px;
+    font-size: 20px;
+    font-weight: light;
+}
+h3{
+    text-align: center;
+}
+figcaption{
+    /* margin: 15px 0; */
+    padding: 0 20px;
+}
+figcaption p{
+    text-align: justify;
+}
+
+/* media-querry */
+
+@media screen and (max-width: 1250px){
+    body{
+        max-width: 70%;
+    }
+}
+
+@media screen and (max-width: 900px){
+    body{
+        max-width: 80%;
+    }
+}
+
+@media screen and (max-width: 750px){
+    body{
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 550px){
+    body{
+        max-width: 90%;
+    }
+    figure{
+        flex-direction: column;
+    }
+    .fav-movies{
+        padding: 2px;
+    }
+}
